@@ -78,16 +78,17 @@
 <body class="p-6">
     <div class="max-w-5xl mx-auto">
         <header class="text-center profile-card">
-            <h1 class="text-5xl font-bold neon-glow">Vojtěch Kocan</h1>
-            <p class="text-lg mt-2">Cyber Security Student | Brno, Česko</p>
-            <p class="text-xl neon-glow mt-2">OPEN TO NEW OPPORTUNITIES</p>
-            <p class="text-gray-400 mt-2">vojtech.kocan@example.com | +420 123 456 789 | 32 spojení</p>
-            <a href="#contact" class="cyber-button">Kontaktujte mě</a>
+            <h1 class="text-5xl font-bold neon-glow" data-lang="name">Vojtěch Kocan</h1>
+            <p class="text-lg mt-2" data-lang="subtitle">Cyber Security Student | Brno, Česko</p>
+            <p class="text-xl neon-glow mt-2" data-lang="status">OPEN TO NEW OPPORTUNITIES</p>
+            <p class="text-gray-400 mt-2" data-lang="contact-info">vojtech.kocan@example.com | +420 123 456 789 | 32 spojení</p>
+            <a href="#contact" class="cyber-button" data-lang="contact-button">Kontaktujte mě</a>
+            <button id="lang-toggle" class="cyber-button ml-4" data-lang="lang-button">Switch to English</button>
         </header>
 
         <section class="mb-12">
-            <h2 class="section-header">O mně</h2>
-            <p class="text-gray-300 bg-opacity-10 bg-white p-4 rounded-lg">
+            <h2 class="section-header" data-lang="about-header">O mně</h2>
+            <p class="text-gray-300 bg-opacity-10 bg-white p-4 rounded-lg" data-lang="about-text">
                 Jsem student 3. ročníku oboru kybernetická bezpečnost na Střední škole informatiky v Brně. 
                 Miluji technologie – od diagnostiky počítačů po vývoj inovativních projektů, jako je formule na dálkové ovládání. 
                 Jsem držitelem certifikací v kybernetické bezpečnosti a hardwaru, aktivně doučuji matematiku a fyziku a hledám příležitosti, kde mohu uplatnit své technické dovednosti a vášeň pro budoucnost digitálního světa.
@@ -95,105 +96,246 @@
         </section>
 
         <section class="mb-12">
-            <h2 class="section-header">Pracovní zkušenosti</h2>
+            <h2 class="section-header" data-lang="experience-header">Pracovní zkušenosti</h2>
             <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow">Technické práce v obci Blízkov</h3>
-                <p class="text-gray-400">Obec Blízkov, Sezónní | Srpen 2025 – Současnost</p>
-                <p class="text-gray-300">Zajištění technické podpory a údržby pro místní infrastrukturu.</p>
+                <h3 class="text-xl font-semibold neon-glow" data-lang="exp1-title">Technické práce v obci Blízkov</h3>
+                <p class="text-gray-400" data-lang="exp1-time">Obec Blízkov, Sezónní | Srpen 2025 – Současnost</p>
+                <p class="text-gray-300" data-lang="exp1-desc">Zajištění technické podpory a údržby pro místní infrastrukturu.</p>
             </div>
             <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow">Doučovatel matematiky a fyziky</h3>
-                <p class="text-gray-400">Na volné noze | Leden 2025 – Současnost</p>
-                <p class="text-gray-300">Individuální výuka matematiky a fyziky s důrazem na efektivní učení.</p>
+                <h3 class="text-xl font-semibold neon-glow" data-lang="exp2-title">Doučovatel matematiky a fyziky</h3>
+                <p class="text-gray-400" data-lang="exp2-time">Na volné noze | Leden 2025 – Současnost</p>
+                <p class="text-gray-300" data-lang="exp2-desc">Individuální výuka matematiky a fyziky s důrazem na efektivní učení.</p>
             </div>
             <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow">Technik PC</h3>
-                <p class="text-gray-400">Na volné noze | Leden 2022 – Současnost</p>
-                <p class="text-gray-300">Diagnostika a opravy počítačů, řešení problémů s hardwarem i softwarem.</p>
+                <h3 class="text-xl font-semibold neon-glow" data-lang="exp3-title">Technik PC</h3>
+                <p class="text-gray-400" data-lang="exp3-time">Na volné noze | Leden 2022 – Současnost</p>
+                <p class="text-gray-300" data-lang="exp3-desc">Diagnostika a opravy počítačů, řešení problémů s hardwarem i softwarem.</p>
             </div>
             <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow">Praktikant na stáži v KOC</h3>
-                <p class="text-gray-400">Jihomoravský kraj, Stáž | Květen 2025 – Červen 2025</p>
-                <p class="text-gray-300">Podpora projektů v oblasti kybernetické bezpečnosti a implementace bezpečnostních opatření.</p>
+                <h3 class="text-xl font-semibold neon-glow" data-lang="exp4-title">Praktikant na stáži v KOC</h3>
+                <p class="text-gray-400" data-lang="exp4-time">Jihomoravský kraj, Stáž | Květen 2025 – Červen 2025</p>
+                <p class="text-gray-300" data-lang="exp4-desc">Podpora projektů v oblasti kybernetické bezpečnosti a implementace bezpečnostních opatření.</p>
             </div>
             <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow">Školní redakce</h3>
-                <p class="text-gray-400">Střední škola informatiky, Brno | Říjen 2022 – Únor 2024</p>
-                <p class="text-gray-300">Tvorba obsahu pro školní časopis a rozvoj komunikačních dovedností.</p>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="section-header">Vzdělání</h2>
-            <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow">Střední škola informatiky, Brno</h3>
-                <p class="text-gray-400">Kybernetická bezpečnost | Září 2022 – Červen 2026</p>
-                <p class="text-gray-300">Specializace na kybernetickou bezpečnost a Vyhlášku č. 82/2018.</p>
-            </div>
-            <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow">Centre of English Studies</h3>
-                <p class="text-gray-400">Anglický jazyk a literatura | Červenec 2025 – Srpen 2025</p>
-                <p class="text-gray-300">Intenzivní jazykový kurz, úroveň B1.</p>
+                <h3 class="text-xl font-semibold neon-glow" data-lang="exp5-title">Školní redakce</h3>
+                <p class="text-gray-400" data-lang="exp5-time">Střední škola informatiky, Brno | Říjen 2022 – Únor 2024</p>
+                <p class="text-gray-300" data-lang="exp5-desc">Tvorba obsahu pro školní časopis a rozvoj komunikačních dovedností.</p>
             </div>
         </section>
 
         <section class="mb-12">
-            <h2 class="section-header">Licence a certifikace</h2>
+            <h2 class="section-header" data-lang="education-header">Vzdělání</h2>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow" data-lang="edu1-title">Střední škola informatiky, Brno</h3>
+                <p class="text-gray-400" data-lang="edu1-time">Kybernetická bezpečnost | Září 2022 – Červen 2026</p>
+                <p class="text-gray-300" data-lang="edu1-desc">Specializace na kybernetickou bezpečnost a Vyhlášku č. 82/2018.</p>
+            </div>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow" data-lang="edu2-title">Centre of English Studies</h3>
+                <p class="text-gray-400" data-lang="edu2-time">Anglický jazyk a literatura | Červenec 2025 – Srpen 2025</p>
+                <p class="text-gray-300" data-lang="edu2-desc">Intenzivní jazykový kurz, úroveň B1.</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-header" data-lang="certifications-header">Licence a certifikace</h2>
             <ul class="list-disc pl-6 text-gray-300">
-                <li><span class="neon-glow">Manažer kybernetické bezpečnosti</span> – Národní úřad pro kybernetickou a informační bezpečnost (Květen 2025 – Květen 2027, ID: 059-2080)</li>
-                <li><span class="neon-glow">Computer Hardware Basics</span> – Cisco (Srpen 2023)</li>
-                <li><span class="neon-glow">CES certifikát jazykový kurz B1</span> – Centre of English Studies (Srpen 2025)</li>
+                <li data-lang="cert1"><span class="neon-glow">Manažer kybernetické bezpečnosti</span> – Národní úřad pro kybernetickou a informační bezpečnost (Květen 2025 – Květen 2027, ID: 059-2080)</li>
+                <li data-lang="cert2"><span class="neon-glow">Computer Hardware Basics</span> – Cisco (Srpen 2023)</li>
+                <li data-lang="cert3"><span class="neon-glow">CES certifikát jazykový kurz B1</span> – Centre of English Studies (Srpen 2025)</li>
             </ul>
         </section>
 
         <section class="mb-12">
-            <h2 class="section-header">Projekty</h2>
+            <h2 class="section-header" data-lang="projects-header">Projekty</h2>
             <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow">Formule na dálkové ovládání 1:8</h3>
-                <p class="text-gray-400">Srpen 2024 – Současnost</p>
-                <p class="text-gray-300">Vývoj a konstrukce formule s fokusem na elektroniku a hardware.</p>
+                <h3 class="text-xl font-semibold neon-glow" data-lang="proj1-title">Formule na dálkové ovládání 1:8</h3>
+                <p class="text-gray-400" data-lang="proj1-time">Srpen 2024 – Současnost</p>
+                <p class="text-gray-300" data-lang="proj1-desc">Vývoj a konstrukce formule s fokusem na elektroniku a hardware.</p>
             </div>
         </section>
 
         <section class="mb-12">
-            <h2 class="section-header">Dovednosti</h2>
+            <h2 class="section-header" data-lang="skills-header">Dovednosti</h2>
             <ul class="list-disc pl-6 text-gray-300">
-                <li>Kybernetická bezpečnost</li>
-                <li>Vyhláška č. 82/2018</li>
-                <li>Angličtina (B1)</li>
-                <li>Italština (elementární)</li>
-                <li>Elektronika a hardware</li>
-                <li>Opravy počítačů</li>
+                <li data-lang="skill1">Kybernetická bezpečnost</li>
+                <li data-lang="skill2">Vyhláška č. 82/2018</li>
+                <li data-lang="skill3">Angličtina (B1)</li>
+                <li data-lang="skill4">Italština (elementární)</li>
+                <li data-lang="skill5">Elektronika a hardware</li>
+                <li data-lang="skill6">Opravy počítačů</li>
             </ul>
         </section>
 
         <section class="mb-12">
-            <h2 class="section-header">Kurzy</h2>
+            <h2 class="section-header" data-lang="courses-header">Kurzy</h2>
             <ul class="list-disc pl-6 text-gray-300">
-                <li>Erasmus Německo – Střední škola informatiky, Brno</li>
-                <li>Letní škola FSI VUT</li>
+                <li data-lang="course1">Erasmus Německo – Střední škola informatiky, Brno</li>
+                <li data-lang="course2">Letní škola FSI VUT</li>
             </ul>
         </section>
 
         <section class="mb-12">
-            <h2 class="section-header">Ceny a ocenění</h2>
+            <h2 class="section-header" data-lang="awards-header">Ceny a ocenění</h2>
             <ul class="list-disc pl-6 text-gray-300">
-                <li>Úspěšný řešitel krajského kola astronomické olympiády 2024 (Duben 2024)</li>
-                <li>AT&T Hackathon Junior 2023 Winner (Květen 2023)</li>
+                <li data-lang="award1">Úspěšný řešitel krajského kola astronomické olympiády 2024 (Duben 2024)</li>
+                <li data-lang="award2">AT&T Hackathon Junior 2023 Winner (Květen 2023)</li>
             </ul>
         </section>
 
         <section class="mb-12">
-            <h2 class="section-header">Jazyky</h2>
+            <h2 class="section-header" data-lang="languages-header">Jazyky</h2>
             <ul class="list-disc pl-6 text-gray-300">
-                <li>Angličtina – B1 (omezená pracovní znalost)</li>
-                <li>Italština – Elementární znalost</li>
+                <li data-lang="lang1">Angličtina – B1 (omezená pracovní znalost)</li>
+                <li data-lang="lang2">Italština – Elementární znalost</li>
             </ul>
         </section>
 
         <footer class="text-center text-gray-500 mt-12">
-            <p>© 2025 Vojtěch Kocan | Cyber Portfolio v2.0</p>
+            <p data-lang="footer">© 2025 Vojtěch Kocan | Cyber Portfolio v2.0</p>
         </footer>
     </div>
+
+    <script>
+        const translations = {
+            cs: {
+                "name": "Vojtěch Kocan",
+                "subtitle": "Cyber Security Student | Brno, Česko",
+                "status": "OPEN TO NEW OPPORTUNITIES",
+                "contact-info": "vojtech.kocan@example.com | +420 123 456 789 | 32 spojení",
+                "contact-button": "Kontaktujte mě",
+                "lang-button": "Switch to English",
+                "about-header": "O mně",
+                "about-text": "Jsem student 3. ročníku oboru kybernetická bezpečnost na Střední škole informatiky v Brně. Miluji technologie – od diagnostiky počítačů po vývoj inovativních projektů, jako je formule na dálkové ovládání. Jsem držitelem certifikací v kybernetické bezpečnosti a hardwaru, aktivně doučuji matematiku a fyziku a hledám příležitosti, kde mohu uplatnit své technické dovednosti a vášeň pro budoucnost digitálního světa.",
+                "experience-header": "Pracovní zkušenosti",
+                "exp1-title": "Technické práce v obci Blízkov",
+                "exp1-time": "Obec Blízkov, Sezónní | Srpen 2025 – Současnost",
+                "exp1-desc": "Zajištění technické podpory a údržby pro místní infrastrukturu.",
+                "exp2-title": "Doučovatel matematiky a fyziky",
+                "exp2-time": "Na volné noze | Leden 2025 – Současnost",
+                "exp2-desc": "Individuální výuka matematiky a fyziky s důrazem na efektivní učení.",
+                "exp3-title": "Technik PC",
+                "exp3-time": "Na volné noze | Leden 2022 – Současnost",
+                "exp3-desc": "Diagnostika a opravy počítačů, řešení problémů s hardwarem i softwarem.",
+                "exp4-title": "Praktikant na stáži v KOC",
+                "exp4-time": "Jihomoravský kraj, Stáž | Květen 2025 – Červen 2025",
+                "exp4-desc": "Podpora projektů v oblasti kybernetické bezpečnosti a implementace bezpečnostních opatření.",
+                "exp5-title": "Školní redakce",
+                "exp5-time": "Střední škola informatiky, Brno | Říjen 2022 – Únor 2024",
+                "exp5-desc": "Tvorba obsahu pro školní časopis a rozvoj komunikačních dovedností.",
+                "education-header": "Vzdělání",
+                "edu1-title": "Střední škola informatiky, Brno",
+                "edu1-time": "Kybernetická bezpečnost | Září 2022 – Červen 2026",
+                "edu1-desc": "Specializace na kybernetickou bezpečnost a Vyhlášku č. 82/2018.",
+                "edu2-title": "Centre of English Studies",
+                "edu2-time": "Anglický jazyk a literatura | Červenec 2025 – Srpen 2025",
+                "edu2-desc": "Intenzivní jazykový kurz, úroveň B1.",
+                "certifications-header": "Licence a certifikace",
+                "cert1": "Manažer kybernetické bezpečnosti – Národní úřad pro kybernetickou a informační bezpečnost (Květen 2025 – Květen 2027, ID: 059-2080)",
+                "cert2": "Computer Hardware Basics – Cisco (Srpen 2023)",
+                "cert3": "CES certifikát jazykový kurz B1 – Centre of English Studies (Srpen 2025)",
+                "projects-header": "Projekty",
+                "proj1-title": "Formule na dálkové ovládání 1:8",
+                "proj1-time": "Srpen 2024 – Současnost",
+                "proj1-desc": "Vývoj a konstrukce formule s fokusem na elektroniku a hardware.",
+                "skills-header": "Dovednosti",
+                "skill1": "Kybernetická bezpečnost",
+                "skill2": "Vyhláška č. 82/2018",
+                "skill3": "Angličtina (B1)",
+                "skill4": "Italština (elementární)",
+                "skill5": "Elektronika a hardware",
+                "skill6": "Opravy počítačů",
+                "courses-header": "Kurzy",
+                "course1": "Erasmus Německo – Střední škola informatiky, Brno",
+                "course2": "Letní škola FSI VUT",
+                "awards-header": "Ceny a ocenění",
+                "award1": "Úspěšný řešitel krajského kola astronomické olympiády 2024 (Duben 2024)",
+                "award2": "AT&T Hackathon Junior 2023 Winner (Květen 2023)",
+                "languages-header": "Jazyky",
+                "lang1": "Angličtina – B1 (omezená pracovní znalost)",
+                "lang2": "Italština – Elementární znalost",
+                "footer": "© 2025 Vojtěch Kocan | Cyber Portfolio v2.0"
+            },
+            en: {
+                "name": "Vojtěch Kocan",
+                "subtitle": "Cyber Security Student | Brno, Czech Republic",
+                "status": "OPEN TO NEW OPPORTUNITIES",
+                "contact-info": "vojtech.kocan@example.com | +420 123 456 789 | 32 connections",
+                "contact-button": "Contact Me",
+                "lang-button": "Přepnout do češtiny",
+                "about-header": "About Me",
+                "about-text": "I am a 3rd-year cyber security student at the Secondary School of Informatics in Brno. I love technology – from computer diagnostics to developing innovative projects like a remote-controlled formula car. I hold certifications in cyber security and hardware, actively tutor mathematics and physics, and am seeking opportunities to apply my technical skills and passion for the future of the digital world.",
+                "experience-header": "Work Experience",
+                "exp1-title": "Technical Work in Blízkov Municipality",
+                "exp1-time": "Blízkov Municipality, Seasonal | August 2025 – Present",
+                "exp1-desc": "Providing technical support and maintenance for local infrastructure.",
+                "exp2-title": "Mathematics and Physics Tutor",
+                "exp2-time": "Freelance | January 2025 – Present",
+                "exp2-desc": "Individual tutoring in mathematics and physics with a focus on effective learning.",
+                "exp3-title": "PC Technician",
+                "exp3-time": "Freelance | January 2022 – Present",
+                "exp3-desc": "Diagnosing and repairing computers, addressing hardware and software issues.",
+                "exp4-title": "Intern at KOC",
+                "exp4-time": "South Moravian Region, Internship | May 2025 – June 2025",
+                "exp4-desc": "Supporting projects in cyber security and implementing security measures.",
+                "exp5-title": "School Editorial Team",
+                "exp5-time": "Secondary School of Informatics, Brno | October 2022 – February 2024",
+                "exp5-desc": "Creating content for the school magazine and developing communication skills.",
+                "education-header": "Education",
+                "edu1-title": "Secondary School of Informatics, Brno",
+                "edu1-time": "Cyber Security | September 2022 – June 2026",
+                "edu1-desc": "Specialization in cyber security and Decree No. 82/2018.",
+                "edu2-title": "Centre of English Studies",
+                "edu2-time": "English Language and Literature | July 2025 – August 2025",
+                "edu2-desc": "Intensive language course, B1 level.",
+                "certifications-header": "Licenses and Certifications",
+                "cert1": "Cyber Security Manager – National Cyber and Information Security Agency (May 2025 – May 2027, ID: 059-2080)",
+                "cert2": "Computer Hardware Basics – Cisco (August 2023)",
+                "cert3": "CES English Course Certificate B1 – Centre of English Studies (August 2025)",
+                "projects-header": "Projects",
+                "proj1-title": "1:8 Scale Remote-Controlled Formula Car",
+                "proj1-time": "August 2024 – Present",
+                "proj1-desc": "Development and construction of a formula car with a focus on electronics and hardware.",
+                "skills-header": "Skills",
+                "skill1": "Cyber Security",
+                "skill2": "Decree No. 82/2018",
+                "skill3": "English (B1)",
+                "skill4": "Italian (Elementary)",
+                "skill5": "Electronics and Hardware",
+                "skill6": "Computer Repairs",
+                "courses-header": "Courses",
+                "course1": "Erasmus Germany – Secondary School of Informatics, Brno",
+                "course2": "FSI VUT Summer School",
+                "awards-header": "Awards and Achievements",
+                "award1": "Successful Participant in the Regional Round of the Astronomy Olympiad 2024 (April 2024)",
+                "award2": "AT&T Hackathon Junior 2023 Winner (May 2023)",
+                "languages-header": "Languages",
+                "lang1": "English – B1 (Limited Working Proficiency)",
+                "lang2": "Italian – Elementary Proficiency",
+                "footer": "© 2025 Vojtěch Kocan | Cyber Portfolio v2.0"
+            }
+        };
+
+        let currentLang = 'cs';
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                element.innerHTML = translations[lang][key].replace(/<span class="neon-glow">(.+?)<\/span>/g, '<span class="neon-glow">$1</span>');
+            });
+            document.documentElement.lang = lang;
+            currentLang = lang;
+            document.getElementById('lang-toggle').textContent = translations[lang]['lang-button'];
+        }
+
+        document.getElementById('lang-toggle').addEventListener('click', () => {
+            const newLang = currentLang === 'cs' ? 'en' : 'cs';
+            updateLanguage(newLang);
+        });
+
+        // Initialize with Czech
+        updateLanguage('cs');
+    </script>
 </body>
 </html>
