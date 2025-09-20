@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vojtěch Kocan - Cyber Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background: #0d0d1a;
+            color: #c0c0ff;
+            overflow-x: hidden;
+        }
+        .section-header {
+            background: linear-gradient(to right, #ff007a, #00ffea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+        .timeline-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid #ff007a;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 8px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ff007a, #00ffea);
+        }
+        .timeline-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(255, 0, 122, 0.5);
+        }
+        .neon-glow {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ff007a, 0 0 20px #00ffea;
+        }
+        .profile-card {
+            background: rgba(10, 10, 20, 0.8);
+            border: 2px solid #00ffea;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 30px rgba(0, 255, 234, 0.3);
+            backdrop-filter: blur(8px);
+        }
+        .cyber-button {
+            background: linear-gradient(45deg, #ff007a, #00ffea);
+            color: #0d0d1a;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        .cyber-button:hover {
+            box-shadow: 0 0 15px #00ffea;
+            transform: translateY(-2px);
+        }
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, -2px); }
+            60% { transform: translate(-2px, 0); }
+            80% { transform: translate(2px, 2px); }
+            100% { transform: translate(0); }
+        }
+        .glitch {
+            animation: glitch 1.5s infinite;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="p-6">
+    <div class="max-w-5xl mx-auto">
+        <header class="text-center profile-card">
+            <h1 class="text-5xl font-bold neon-glow glitch">Vojtěch Kocan</h1>
+            <p class="text-lg mt-2">Cyber Security Student | Brno, Česko</p>
+            <p class="text-xl neon-glow mt-2">OPEN TO NEW OPPORTUNITIES</p>
+            <p class="text-gray-400 mt-2">vojtech.kocan@example.com | +420 123 456 789 | 32 spojení</p>
+            <a href="#contact" class="cyber-button">Kontaktujte mě</a>
+        </header>
+
+        <section class="mb-12">
+            <h2 class="section-header">O mně</h2>
+            <p class="text-gray-300 bg-opacity-10 bg-white p-4 rounded-lg">
+                Jsem student 3. ročníku oboru kybernetická bezpečnost na Střední škole informatiky v Brně. 
+                Fascinuje mě svět technologií – od oprav počítačů po vývoj futuristických projektů, jako je formule na dálkové ovládání. 
+                Jsem držitelem certifikací v kybernetické bezpečnosti a hardwaru, vášnivě doučuji matematiku a fyziku a hledám příležitosti, kde mohu propojit své technické dovednosti s inovativním myšlením.
+            </p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-header">Pracovní zkušenosti</h2>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow">Technické práce v obci Blízkov</h3>
+                <p class="text-gray-400">Obec Blízkov, Sezónní | Srpen 2025 – Současnost</p>
+                <p class="text-gray-300">Zajištění technické podpory a údržby pro místní infrastrukturu.</p>
+            </div>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow">Doučovatel matematiky a fyziky</h3>
+                <p class="text-gray-400">Na volné noze | Leden 2025 – Současnost</p>
+                <p class="text-gray-300">Výuka matematiky a fyziky s důrazem na individuální přístup ke studentům.</p>
+            </div>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow">Technik PC</h3>
+                <p class="text-gray-400">Na volné noze | Leden 2022 – Současnost</p>
+                <p class="text-gray-300">Diagnostika a opravy počítačů, řešení softwarových a hardwarových problémů.</p>
+            </div>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow">Praktikant na stáži v KOC</h3>
+                <p class="text-gray-400">Jihomoravský kraj, Stáž | Květen 2025 – Červen 2025</p>
+                <p class="text-gray-300">Podpora kybernetických projektů a implementace bezpečnostních opatření.</p>
+            </div>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow">Školní redakce</h3>
+                <p class="text-gray-400">Střední škola informatiky, Brno | Říjen 2022 – Únor 2024</p>
+                <p class="text-gray-300">Tvorba obsahu pro školní časopis a rozvoj komunikačních dovedností.</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-header">Vzdělání</h2>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow">Střední škola informatiky, Brno</h3>
+                <p class="text-gray-400">Kybernetická bezpečnost | Září 2022 – Červen 2026</p>
+                <p class="text-gray-300">Specializace na kybernetickou bezpečnost a Vyhlášku č. 82/2018.</p>
+            </div>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow">Centre of English Studies</h3>
+                <p class="text-gray-400">Anglický jazyk a literatura | Červenec 2025 – Srpen 2025</p>
+                <p class="text-gray-300">Intenzivní jazykový kurz, úroveň B1.</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-header">Licence a certifikace</h2>
+            <ul class="list-disc pl-6 text-gray-300">
+                <li><span class="neon-glow">Manažer kybernetické bezpečnosti</span> – Národní úřad pro kybernetickou a informační bezpečnost (Květen 2025 – Květen 2027, ID: 059-2080)</li>
+                <li><span class="neon-glow">Computer Hardware Basics</span> – Cisco (Srpen 2023)</li>
+                <li><span class="neon-glow">CES certifikát jazykový kurz B1</span> – Centre of English Studies (Srpen 2025)</li>
+            </ul>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-header">Projekty</h2>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow">Formule na dálkové ovládání 1:8</h3>
+                <p class="text-gray-400">Srpen 2024 – Současnost</p>
+                <p class="text-gray-300">Konstrukce a vývoj formule s důrazem na elektroniku a hardware.</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-header">Dovednosti</h2>
+            <ul class="list-disc pl-6 text-gray-300">
+                <li>Kybernetická bezpečnost</li>
+                <li>Vyhláška č. 82/2018</li>
+                <li>Angličtina (B1)</li>
+                <li>Italština (elementární)</li>
+                <li>Elektronika a hardware</li>
+                <li>Opravy počítačů</li>
+            </ul>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-header">Kurzy</h2>
+            <ul class="list-disc pl-6 text-gray-300">
+                <li>Erasmus Německo – Střední škola informatiky, Brno</li>
+                <li>Letní škola FSI VUT</li>
+            </ul>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-header">Ceny a ocenění</h2>
+            <ul class="list-disc pl-6 text-gray-300">
+                <li>Úspěšný řešitel krajského kola astronomické olympiády 2024 (Duben 2024)</li>
+                <li>AT&T Hackathon Junior 2023 Winner (Květen 2023)</li>
+            </ul>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-header">Jazyky</h2>
+            <ul class="list-disc pl-6 text-gray-300">
+                <li>Angličtina – B1 (omezená pracovní znalost)</li>
+                <li>Italština – Elementární znalost</li>
+            </ul>
+        </section>
+
+        <footer class="text-center text-gray-500 mt-12">
+            <p>© 2025 Vojtěch Kocan | Cyber Portfolio v1.0</p>
+        </footer>
+    </div>
+</body>
+</html>
