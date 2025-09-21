@@ -53,7 +53,7 @@
             cs: {
                 "name": "Vojtěch Kocan",
                 "subtitle": "Student kybernetické bezpečnosti | Brno, Česko",
-                "lang-button": "Switch to English",
+                "lang-button": "Přepnout do angličtiny",
                 "home-button": "Zpět na portfolio",
                 "projects-header": "Moje projekty",
                 "checklist-title": "Checklist projektu automatizace",
@@ -68,11 +68,11 @@
             en: {
                 "name": "Vojtěch Kocan",
                 "subtitle": "Cyber Security Student | Brno, Czech Republic",
-                "lang-button": "Přepnout do češtiny",
+                "lang-button": "Switch to Czech",
                 "home-button": "Back to Portfolio",
                 "projects-header": "My Projects",
                 "checklist-title": "Automation Project Checklist",
-                "checklist-desc": "A web application for managing automation project checklists. Allows creating, editing, and tracking tasks for efficient project management. Visit the project at: <a href=\"https://krocan505202.github.io/checklist/\" target="_blank\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/checklist/</a>",
+                "checklist-desc": "A web application for managing automation project checklists. Allows creating, editing, and tracking tasks for efficient project management. Visit the project at: <a href=\"https://krocan505202.github.io/checklist/\" target=\"_blank\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/checklist/</a>",
                 "automation-title": "Automation Project",
                 "automation-desc": "A private automation project under development with potential for a commercial model. Details are not publicly disclosed at this time. Interested in collaboration? Please reach out via email in the Contact Me section.",
                 "contact-header": "Contact Me",
@@ -85,22 +85,36 @@
         let currentLang = 'en';
 
         function updateLanguage(lang) {
-            document.querySelectorAll('[data-lang]').forEach(element => {
-                const key = element.getAttribute('data-lang');
-                element.innerHTML = translations[lang][key].replace(/<span class="neon-glow">(.+?)<\/span>/g, '<span class="neon-glow">$1</span>');
-            });
-            document.documentElement.lang = lang;
-            currentLang = lang;
-            document.getElementById('lang-toggle').textContent = translations[lang]['lang-button'];
+            try {
+                document.querySelectorAll('[data-lang]').forEach(element => {
+                    const key = element.getAttribute('data-lang');
+                    if (translations[lang] && translations[lang][key]) {
+                        element.innerHTML = translations[lang][key];
+                    } else {
+                        console.warn(`Translation missing for key: ${key} in language: ${lang}`);
+                    }
+                });
+                document.documentElement.lang = lang;
+                currentLang = lang;
+                document.getElementById('lang-toggle').textContent = translations[lang]['lang-button'];
+            } catch (error) {
+                console.error('Error updating language:', error);
+            }
         }
 
-        document.getElementById('lang-toggle').addEventListener('click', () => {
-            const newLang = currentLang === 'cs' ? 'en' : 'cs';
-            updateLanguage(newLang);
+        document.addEventListener('DOMContentLoaded', () => {
+            const langToggleButton = document.getElementById('lang-toggle');
+            if (langToggleButton) {
+                langToggleButton.addEventListener('click', () => {
+                    const newLang = currentLang === 'cs' ? 'en' : 'cs';
+                    updateLanguage(newLang);
+                });
+            } else {
+                console.error('Language toggle button not found');
+            }
+            // Initialize with English
+            updateLanguage('en');
         });
-
-        // Initialize with English
-        updateLanguage('en');
     </script>
 </body>
 </html>
