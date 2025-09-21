@@ -1,1 +1,71 @@
-
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: #0a0a23;
+    color: #d0d0ff;
+    overflow-x: hidden;
+}
+.section-header {
+    background: linear-gradient(to right, #ff2e63, #08f7fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.timeline-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #ff2e63;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ff2e63, #08f7fe);
+}
+.timeline-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 46, 99, 0.4);
+}
+.neon-glow {
+    color: #ffffff;
+    text-shadow: 0 0 8px #ff2e63, 0 0 15px #08f7fe;
+}
+.profile-card {
+    background: rgba(15, 15, 30, 0.85);
+    border: 2px solid #08f7fe;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 25px rgba(8, 247, 254, 0.3);
+    backdrop-filter: blur(6px);
+}
+.cyber-button {
+    background: linear-gradient(45deg, #ff2e63, #08f7fe);
+    color: #0a0a23;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+.cyber-button:hover {
+    box-shadow: 0 0 12px #08f7fe;
+    transform: translateY(-2px);
+}
+.highlight-link {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
