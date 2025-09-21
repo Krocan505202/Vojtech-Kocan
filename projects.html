@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vojtěch Kocan - Projekty</title>
+    <title>Vojtěch Kocan - Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -15,19 +15,30 @@
             <h1 class="text-5xl font-bold neon-glow" data-lang="name">Vojtěch Kocan</h1>
             <p class="text-lg mt-2" data-lang="subtitle">Cyber Security Student | Brno, Czech Republic</p>
             <button id="lang-toggle" class="cyber-button" data-lang="lang-button">Přepnout do češtiny</button>
-            <a href="index.html" class="cyber-button" data-lang="home-button">Zpět na portfolio</a>
+            <a href="index.html" class="cyber-button" data-lang="home-button">Back to Portfolio</a>
         </header>
 
         <section class="mb-12">
-            <h2 class="section-header" data-lang="projects-header">Moje projekty</h2>
+            <h2 class="section-header" data-lang="projects-header">My Projects</h2>
             <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="checklist-title">Checklist projektu automatizace</h3>
+                <h3 class="text-xl font-semibold neon-glow" data-lang="checklist-title">Automation Project Checklist</h3>
                 <p class="text-gray-300" data-lang="checklist-desc">
-                    Webová aplikace pro správu checklistů automatizačních projektů. Umožňuje vytvářet, upravovat a sledovat úkoly pro efektivní správu projektů.
-                    <a href="https://krocan505202.github.io/checklist/" target="_blank" class="highlight-link neon-glow cyber-button">Zobrazit projekt</a>
+                    A web application for managing automation project checklists. Allows creating, editing, and tracking tasks for efficient project management. Visit the project at: <a href="https://krocan505202.github.io/checklist/" target="_blank" class="highlight-link neon-glow cyber-button">https://krocan505202.github.io/checklist/</a>
                 </p>
                 <p class="text-gray-400" data-lang="checklist-contact">
-                    Pro více informací kontaktujte: <a href="mailto:vojtech.krocanek@gmail.com" class="highlight-link neon-glow">vojtech.krocanek@gmail.com</a>
+                    For more information, contact: <a href="mailto:vojtech.krocanek@gmail.com" class="highlight-link neon-glow">vojtech.krocanek@gmail.com</a>
+                </p>
+            </div>
+        </section>
+            <section class="mb-12">
+            <h2 class="section-header" data-lang="projects-header">Contac me:</h2>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold neon-glow" data-lang="checklist-title">Contact</h3>
+               
+    
+                </p>
+                <p class="text-gray-400" data-lang="checklist-contact">
+                    For more information, contact: <a href="mailto:vojtech.krocanek@gmail.com" class="highlight-link neon-glow">vojtech.krocanek@gmail.com</a>
                 </p>
             </div>
         </section>
@@ -46,7 +57,7 @@
                 "home-button": "Zpět na portfolio",
                 "projects-header": "Moje projekty",
                 "checklist-title": "Checklist projektu automatizace",
-                "checklist-desc": "Webová aplikace pro správu checklistů automatizačních projektů. Umožňuje vytvářet, upravovat a sledovat úkoly pro efektivní správu projektů.",
+                "checklist-desc": "Webová aplikace pro správu checklistů automatizačních projektů. Umožňuje vytvářet, upravovat a sledovat úkoly pro efektivní správu projektů. Navštivte projekt na: <a href=\"https://krocan505202.github.io/checklist/\" target=\"_blank\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/checklist/</a>",
                 "checklist-contact": "Pro více informací kontaktujte: <a href=\"mailto:vojtech.krocanek@gmail.com\" class=\"highlight-link neon-glow\">vojtech.krocanek@gmail.com</a>",
                 "footer": "© 2025 Vojtěch Kocan | Cyber Portfolio v2.0"
             },
@@ -57,13 +68,13 @@
                 "home-button": "Back to Portfolio",
                 "projects-header": "My Projects",
                 "checklist-title": "Automation Project Checklist",
-                "checklist-desc": "A web application for managing automation project checklists. Allows creating, editing, and tracking tasks for efficient project management.",
+                "checklist-desc": "A web application for managing automation project checklists. Allows creating, editing, and tracking tasks for efficient project management. Visit the project at: <a href=\"https://krocan505202.github.io/checklist/\" target=\"_blank\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/checklist/</a>",
                 "checklist-contact": "For more information, contact: <a href=\"mailto:vojtech.krocanek@gmail.com\" class=\"highlight-link neon-glow\">vojtech.krocanek@gmail.com</a>",
                 "footer": "© 2025 Vojtěch Kocan | Portfolio v2.0"
             }
         };
 
-        let currentLang = 'cs';
+        let currentLang = 'en';
 
         function updateLanguage(lang) {
             document.querySelectorAll('[data-lang]').forEach(element => {
@@ -80,8 +91,8 @@
             updateLanguage(newLang);
         });
 
-        // Initialize with Czech
-        updateLanguage('cs');
+        // Initialize with English
+        updateLanguage('en');
     </script>
 </body>
 </html>
