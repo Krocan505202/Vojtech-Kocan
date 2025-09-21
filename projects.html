@@ -3,43 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vojtěch Kocan</title>
+    <title>Vojtěch Kocan - Projekty</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body class="bg-gray-100 font-['Roboto_Mono']">
-    <header class="bg-[#0a0a23] text-white py-6">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl section-header">Vojtěch Kocan</h1>
-            <p class="text-lg mt-2 neon-glow">Portfolio projektů</p>
-        </div>
-    </header>
+<body class="p-6 font-['Roboto_Mono']">
+    <div class="max-w-5xl mx-auto">
+        <header class="text-center profile-card">
+            <h1 class="text-5xl font-bold neon-glow" data-lang="name">Vojtěch Kocan</h1>
+            <p class="text-lg mt-2" data-lang="subtitle">Cyber Security Student | Brno, Czech Republic</p>
+            <button id="lang-toggle" class="cyber-button" data-lang="lang-button">Přepnout do češtiny</button>
+            <a href="index.html" class="cyber-button" data-lang="home-button">Zpět na portfolio</a>
+        </header>
 
-    <section class="container mx-auto py-10">
-        <h2 class="section-header text-center">Moje projekty</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Projekt Checklist -->
+        <section class="mb-12">
+            <h2 class="section-header" data-lang="projects-header">Moje projekty</h2>
             <div class="timeline-item">
-                <h3 class="text-2xl neon-glow mb-4">Checklist projektu automatizace</h3>
-                <p class="text-[#d0d0ff] mb-4">
+                <h3 class="text-xl font-semibold neon-glow" data-lang="checklist-title">Checklist projektu automatizace</h3>
+                <p class="text-gray-300" data-lang="checklist-desc">
                     Webová aplikace pro správu checklistů automatizačních projektů. Umožňuje vytvářet, upravovat a sledovat úkoly pro efektivní správu projektů.
+                    <a href="https://krocan505202.github.io/checklist/" target="_blank" class="highlight-link neon-glow cyber-button">Zobrazit projekt</a>
                 </p>
-                <a href="https://krocan505202.github.io/checklist/" target="_blank" class="cyber-button highlight-link">
-                    Zobrazit projekt
-                </a>
-                <p class="text-[#d0d0ff] mt-4">
+                <p class="text-gray-400" data-lang="checklist-contact">
                     Pro více informací kontaktujte: <a href="mailto:vojtech.krocanek@gmail.com" class="highlight-link neon-glow">vojtech.krocanek@gmail.com</a>
                 </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="bg-[#0a0a23] text-[#d0d0ff] py-4 mt-10">
-        <div class="container mx-auto text-center">
-            <p>© 2025 Vojtěch Kocan | Portfolio</p>
-        </div>
-    </footer>
+        <footer class="text-center text-gray-500 mt-12">
+            <p data-lang="footer">© 2025 Vojtěch Kocan | Cyber Portfolio v2.0</p>
+        </footer>
+    </div>
+
+    <script>
+        const translations = {
+            cs: {
+                "name": "Vojtěch Kocan",
+                "subtitle": "Student kybernetické bezpečnosti | Brno, Česko",
+                "lang-button": "Switch to English",
+                "home-button": "Zpět na portfolio",
+                "projects-header": "Moje projekty",
+                "checklist-title": "Checklist projektu automatizace",
+                "checklist-desc": "Webová aplikace pro správu checklistů automatizačních projektů. Umožňuje vytvářet, upravovat a sledovat úkoly pro efektivní správu projektů.",
+                "checklist-contact": "Pro více informací kontaktujte: <a href=\"mailto:vojtech.krocanek@gmail.com\" class=\"highlight-link neon-glow\">vojtech.krocanek@gmail.com</a>",
+                "footer": "© 2025 Vojtěch Kocan | Cyber Portfolio v2.0"
+            },
+            en: {
+                "name": "Vojtěch Kocan",
+                "subtitle": "Cyber Security Student | Brno, Czech Republic",
+                "lang-button": "Přepnout do češtiny",
+                "home-button": "Back to Portfolio",
+                "projects-header": "My Projects",
+                "checklist-title": "Automation Project Checklist",
+                "checklist-desc": "A web application for managing automation project checklists. Allows creating, editing, and tracking tasks for efficient project management.",
+                "checklist-contact": "For more information, contact: <a href=\"mailto:vojtech.krocanek@gmail.com\" class=\"highlight-link neon-glow\">vojtech.krocanek@gmail.com</a>",
+                "footer": "© 2025 Vojtěch Kocan | Cyber Portfolio v2.0"
+            }
+        };
+
+        let currentLang = 'cs';
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                element.innerHTML = translations[lang][key].replace(/<span class="neon-glow">(.+?)<\/span>/g, '<span class="neon-glow">$1</span>');
+            });
+            document.documentElement.lang = lang;
+            currentLang = lang;
+            document.getElementById('lang-toggle').textContent = translations[lang]['lang-button'];
+        }
+
+        document.getElementById('lang-toggle').addEventListener('click', () => {
+            const newLang = currentLang === 'cs' ? 'en' : 'cs';
+            updateLanguage(newLang);
+        });
+
+        // Initialize with Czech
+        updateLanguage('cs');
+    </script>
 </body>
 </html>
