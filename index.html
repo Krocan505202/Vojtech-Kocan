@@ -123,6 +123,30 @@
         </footer>
     </div>
 
+    <section class="mb-12">
+    <h2 class="section-header" data-lang="qa-header">Q&A</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+            <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question1">What inspired you to focus on cyber security?</h3>
+            <div class="accordion-content hidden text-gray-300" data-lang="qa-answer1">
+                
+            </div>
+        </div>
+        <div class="accordion-item mt-2">
+            <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question2">How do you approach new projects?</h3>
+            <div class="accordion-content hidden text-gray-300" data-lang="qa-answer2">
+                
+            </div>
+        </div>
+        <div class="accordion-item mt-2">
+            <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question3">Can I collaborate with you on a project?</h3>
+            <div class="accordion-content hidden text-gray-300" data-lang="qa-answer3">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
     <script>
         const translations = {
             cs: {
@@ -258,6 +282,46 @@
 
         // Initialize with English
         updateLanguage('en');
+        const translations = {
+    cs: {
+        "qa-header": "Otázky a odpovědi",
+        "qa-question1": "",
+        "qa-answer1": ".",
+        "qa-question2": "",
+        "qa-answer2": "",
+     
+    },
+    en: {
+        "qa-header": "Q&A",
+        "qa-question1": "",
+        "qa-answer1": "",
+        "qa-question2": "",
+        "qa-answer2": "",
+       
+    }
+};
+
+// JavaScript pro rolovací menu (akordeon)
+document.addEventListener('DOMContentLoaded', () => {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    
+    accordionItems.forEach(item => {
+        const header = item.querySelector('h3');
+        const content = item.querySelector('.accordion-content');
+        
+        header.addEventListener('click', () => {
+            // Skryje všechny ostatní odpovědi
+            accordionItems.forEach(otherItem => {
+                const otherContent = otherItem.querySelector('.accordion-content');
+                if (otherContent !== content && !otherContent.classList.contains('hidden')) {
+                    otherContent.classList.add('hidden');
+                }
+            });
+            // Přepne zobrazení aktuální odpovědi
+            content.classList.toggle('hidden');
+        });
+    });
+});
     </script>
 </body>
 </html>
