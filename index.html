@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Vojtěch Kocan, a 4th-year cyber security student from Brno, Czech Republic.">
     <title>Vojtěch Kocan</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
@@ -15,7 +16,7 @@
             <h1 class="text-5xl font-bold neon-glow" data-lang="name">Vojtěch Kocan</h1>
             <p class="text-lg mt-2" data-lang="subtitle">Cyber Security Student | Brno, Czech Republic</p>
             <p class="text-xl neon-glow mt-2" data-lang="status">OPEN TO NEW OPPORTUNITIES</p>
-            <p class="text-gray-400 mt-2" data-lang="contact-info">vojtech.krocanek@gmail.com</p>
+            <p class="text-gray-400 mt-2" data-lang="contact-info">vojtech.kocan@example.com | +420 123 456 789 | 32 connections</p>
             <button id="lang-toggle" class="cyber-button" data-lang="lang-button">Přepnout do češtiny</button>
             <a href="projects.html" class="cyber-button" data-lang="projects-button">View Projects</a>
         </header>
@@ -29,6 +30,7 @@
             </p>
         </section>
 
+  
 
         <section class="mb-12">
             <h2 class="section-header" data-lang="experience-header">Work Experience</h2>
@@ -123,41 +125,17 @@
         </footer>
     </div>
 
-    <section class="mb-12">
-    <h2 class="section-header" data-lang="qa-header">Q&A</h2>
-    <div class="accordion">
-        <div class="accordion-item">
-            <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question1">What inspired you to focus on cyber security?</h3>
-            <div class="accordion-content hidden text-gray-300" data-lang="qa-answer1">
-                
-            </div>
-        </div>
-        <div class="accordion-item mt-2">
-            <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question2">How do you approach new projects?</h3>
-            <div class="accordion-content hidden text-gray-300" data-lang="qa-answer2">
-                
-            </div>
-        </div>
-        <div class="accordion-item mt-2">
-            <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question3">Can I collaborate with you on a project?</h3>
-            <div class="accordion-content hidden text-gray-300" data-lang="qa-answer3">
-                
-            </div>
-        </div>
-    </div>
-</section>
-
     <script>
         const translations = {
             cs: {
                 "name": "Vojtěch Kocan",
-                "subtitle": "Cyber Security Student | Brno, Česko",
-                "status": "OPEN TO NEW OPPORTUNITIES",
+                "subtitle": "Student kybernetické bezpečnosti | Brno, Česko",
+                "status": "Otevřen novým příležitostem",
                 "contact-info": "vojtech.kocan@example.com | +420 123 456 789 | 32 spojení",
                 "lang-button": "Switch to English",
                 "projects-button": "Zobrazit projekty",
                 "about-header": "O mně",
-                "about-text": "Jsem student 3. ročníku oboru kybernetická bezpečnost na Střední škole informatiky v Brně. Miluji technologie – od diagnostiky počítačů po vývoj inovativních projektů, jako je formule na dálkové ovládání. Jsem držitelem certifikací v kybernetické bezpečnosti a hardwaru, aktivně doučuji matematiku a fyziku a hledám příležitosti, kde mohu uplatnit své technické dovednosti a vášeň pro budoucnost digitálního světa.",
+                "about-text": "Jsem student 4. ročníku oboru kybernetická bezpečnost na Střední škole informatiky v Brně. Miluji technologie – od diagnostiky počítačů po vývoj inovativních projektů, jako je formule na dálkové ovládání. Jsem držitelem certifikací v kybernetické bezpečnosti a hardwaru, aktivně doučuji matematiku a fyziku a hledám příležitosti, kde mohu uplatnit své technické dovednosti a vášeň pro budoucnost digitálního světa.",
                 "protontech-header": "ProtonTech E-Shop",
                 "protontech-desc": "Připravuji spuštění <a href=\"https://www.protontech.cz/\" target=\"_blank\" class=\"highlight-link neon-glow cyber-button\">ProtonTech</a>, e-shopu zaměřeného na poskytování dostupných elektronických součástek pro nadšence i profesionály. Platforma nabídne pečlivě vybraný sortiment součástek, služby sestavení počítačů na míru a řešení 3D tisku. ProtonTech bude spuštěn po mé maturitě v červnu 2026 a reaguje na potřebu dostupných a kvalitních technologických řešení na českém trhu.",
                 "experience-header": "Pracovní zkušenosti",
@@ -184,9 +162,9 @@
                 "edu2-time": "Anglický jazyk a literatura | Červenec 2025 – Srpen 2025",
                 "edu2-desc": "Intenzivní jazykový kurz, úroveň B1.",
                 "certifications-header": "Licence a certifikace",
-                "cert1": "Manažer kybernetické bezpečnosti – Národní úřad pro kybernetickou a informační bezpečnost (Květen 2025 – Květen 2027, ID: 059-2080)",
-                "cert2": "Computer Hardware Basics – Cisco (Srpen 2023)",
-                "cert3": "CES certifikát jazykový kurz B1 – Centre of English Studies (Srpen 2025)",
+                "cert1": "<span class=\"neon-glow\">Manažer kybernetické bezpečnosti</span> – Národní úřad pro kybernetickou a informační bezpečnost (Květen 2025 – Květen 2027, ID: 059-2080)",
+                "cert2": "<span class=\"neon-glow\">Computer Hardware Basics</span> – Cisco (Srpen 2023)",
+                "cert3": "<span class=\"neon-glow\">CES certifikát jazykový kurz B1</span> – Centre of English Studies (Srpen 2025)",
                 "skills-header": "Dovednosti",
                 "skill1": "Kybernetická bezpečnost",
                 "skill2": "Vyhláška č. 82/2018",
@@ -199,7 +177,7 @@
                 "course2": "Letní škola FSI VUT",
                 "awards-header": "Ceny a ocenění",
                 "award1": "Úspěšný řešitel krajského kola astronomické olympiády 2024 (Duben 2024)",
-                "award2": "AT&T Hackathon Junior 2023 Winner (Květen 2023)",
+                "award2": "Vítěz AT&T Hackathon Junior 2023 (Květen 2023)",
                 "languages-header": "Jazyky",
                 "lang1": "Angličtina – B1 (omezená pracovní znalost)",
                 "lang2": "Italština – Elementární znalost",
@@ -213,7 +191,7 @@
                 "lang-button": "Přepnout do češtiny",
                 "projects-button": "View Projects",
                 "about-header": "About Me",
-                "about-text": "I am a 3rd-year cyber security student at the Secondary School of Informatics in Brno. I love technology – from computer diagnostics to developing innovative projects like a remote-controlled formula car. I hold certifications in cyber security and hardware, actively tutor mathematics and physics, and am seeking opportunities to apply my technical skills and passion for the future of the digital world.",
+                "about-text": "I am a 4th-year cyber security student at the Secondary School of Informatics in Brno. I love technology – from computer diagnostics to developing innovative projects like a remote-controlled formula car. I hold certifications in cyber security and hardware, actively tutor mathematics and physics, and am seeking opportunities to apply my technical skills and passion for the future of the digital world.",
                 "protontech-header": "ProtonTech E-Shop",
                 "protontech-desc": "I am preparing to launch <a href=\"https://www.protontech.cz/\" target=\"_blank\" class=\"highlight-link neon-glow cyber-button\">ProtonTech</a>, an e-shop focused on providing affordable electronic components for enthusiasts and professionals. The platform will offer a curated selection of components, custom PC building services, and 3D printing solutions. ProtonTech is set to launch after my graduation in June 2026, addressing the need for accessible, high-quality tech solutions in the Czech market.",
                 "experience-header": "Work Experience",
@@ -240,9 +218,9 @@
                 "edu2-time": "English Language and Literature | July 2025 – August 2025",
                 "edu2-desc": "Intensive language course, B1 level.",
                 "certifications-header": "Licenses and Certifications",
-                "cert1": "Cyber Security Manager – National Cyber and Information Security Agency (May 2025 – May 2027, ID: 059-2080)",
-                "cert2": "Computer Hardware Basics – Cisco (August 2023)",
-                "cert3": "CES English Course Certificate B1 – Centre of English Studies (August 2025)",
+                "cert1": "<span class=\"neon-glow\">Cyber Security Manager</span> – National Cyber and Information Security Agency (May 2025 – May 2027, ID: 059-2080)",
+                "cert2": "<span class=\"neon-glow\">Computer Hardware Basics</span> – Cisco (August 2023)",
+                "cert3": "<span class=\"neon-glow\">CES English Course Certificate B1</span> – Centre of English Studies (August 2025)",
                 "skills-header": "Skills",
                 "skill1": "Cyber Security",
                 "skill2": "Decree No. 82/2018",
@@ -259,7 +237,7 @@
                 "languages-header": "Languages",
                 "lang1": "English – B1 (Limited Working Proficiency)",
                 "lang2": "Italian – Elementary Proficiency",
-                "footer": "© 2025 Vojtěch Kocan | Portfolio v2.0"
+                "footer": "© 2025 Vojtěch Kocan | Cyber Portfolio v2.0"
             }
         };
 
@@ -268,7 +246,7 @@
         function updateLanguage(lang) {
             document.querySelectorAll('[data-lang]').forEach(element => {
                 const key = element.getAttribute('data-lang');
-                element.innerHTML = translations[lang][key].replace(/<span class="neon-glow">(.+?)<\/span>/g, '<span class="neon-glow">$1</span>');
+                element.innerHTML = translations[lang][key];
             });
             document.documentElement.lang = lang;
             currentLang = lang;
@@ -282,46 +260,6 @@
 
         // Initialize with English
         updateLanguage('en');
-        const translations = {
-    cs: {
-        "qa-header": "Otázky a odpovědi",
-        "qa-question1": "",
-        "qa-answer1": ".",
-        "qa-question2": "",
-        "qa-answer2": "",
-     
-    },
-    en: {
-        "qa-header": "Q&A",
-        "qa-question1": "",
-        "qa-answer1": "",
-        "qa-question2": "",
-        "qa-answer2": "",
-       
-    }
-};
-
-// JavaScript pro rolovací menu (akordeon)
-document.addEventListener('DOMContentLoaded', () => {
-    const accordionItems = document.querySelectorAll('.accordion-item');
-    
-    accordionItems.forEach(item => {
-        const header = item.querySelector('h3');
-        const content = item.querySelector('.accordion-content');
-        
-        header.addEventListener('click', () => {
-            // Skryje všechny ostatní odpovědi
-            accordionItems.forEach(otherItem => {
-                const otherContent = otherItem.querySelector('.accordion-content');
-                if (otherContent !== content && !otherContent.classList.contains('hidden')) {
-                    otherContent.classList.add('hidden');
-                }
-            });
-            // Přepne zobrazení aktuální odpovědi
-            content.classList.toggle('hidden');
-        });
-    });
-});
     </script>
 </body>
 </html>
