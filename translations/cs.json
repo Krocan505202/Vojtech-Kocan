@@ -48,4 +48,19 @@
     "award2": "Vítěz AT&T Hackathon Junior 2023 (Květen 2023)",
     "languages-header": "Jazyky",
     "lang1": "Angličtina – B1 (omezená pracovní znalost)",
-    "lang
+    "lang2": "Italština – A1 (elementární)",
+    "lang3": "Polština – A1",
+    "lang4": "Ruština – A2",
+    "lang5": "Čeština – C2 (rodilý mluvčí)",
+    "lang6": "Slovenština – C2 (téměř rodilý mluvčí)",
+    "lang7": "Němčina – A1",
+    "lang8": "Ukrajinština – A1",
+    "qa-header": "Otázky a odpovědi",
+    "qa-question1": "Co vás inspirovalo k zaměření na kybernetickou bezpečnost?",
+    "qa-answer1": "Moje vášeň pro technologie a řešení problémů mě přivedla ke kybernetické bezpečnosti. Fascinovalo mě, jak lze zneužít zranitelnosti v systémech, a chtěl jsem se naučit, jak chránit digitální infrastruktury. Účast na hackathonech a práce na reálných projektech mou zájem dále podnítily.",
+    "qa-question2": "Jak přistupujete k novým projektům?",
+    "qa-answer2": "Začínám definováním jasných cílů a průzkumem problémového prostoru. Poté rozdělím projekt na zvládnutelné úkoly, prioritizuji bezpečnost a efektivitu a iteruji na základě testování a zpětné vazby. Klíčem je spolupráce a udržování přehledu o nejnovějších technologických trendech.",
+    "qa-question3": "Mohu s vámi spolupracovat na projektu?",
+    "qa-answer3": "Rozhodně, jsem otevřen spolupráci! Kontaktujte mě přes e-mail nebo LinkedIn, abychom probrali potenciální projekty. Zvláště mě zajímá kybernetická bezpečnost, hardware nebo inovativní technologické nápady, které odpovídají mým dovednostem a zájmům.",
+    "footer": "© 2025 Vojtěch Kocan | Cyber Portfolio v2.0"
+}
