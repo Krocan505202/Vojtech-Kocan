@@ -151,7 +151,7 @@
 </div>
 
 <script>
-    // === VÝCHOZÍ ANGLIČTINA (přímo v JS) ===
+
     const defaultTranslations = {
         "name": "Vojtěch Kocan",
         "subtitle": "Cyber Security Student | Brno, Czech Republic",
@@ -219,7 +219,7 @@
         "footer": "© 2025 Vojtěch Kocan | Cyber Portfolio v2.0"
     };
 
-    let translations = { ...defaultTranslations }; // kopie
+    let translations = { ...defaultTranslations };
 
     // Načítání jazyka
     async function loadLanguage(lang) {
@@ -239,7 +239,7 @@
         document.documentElement.lang = lang;
     }
 
-    // Aktualizace textu
+
     function updateLanguage() {
         document.querySelectorAll('[data-lang]').forEach(el => {
             const key = el.getAttribute('data-lang');
@@ -249,12 +249,12 @@
         });
     }
 
-    // Přepínač
+   
     document.getElementById('lang-select').addEventListener('change', (e) => {
         loadLanguage(e.target.value);
     });
 
-    // Accordion
+  
     document.addEventListener('DOMContentLoaded', () => {
         updateLanguage(); // okamžitě
         document.querySelectorAll('.accordion-item').forEach(item => {
