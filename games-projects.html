@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vojtěch Kocan - Projects</title>
+    <title>Vojtěch Kocan - Game Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -11,73 +11,71 @@
 </head>
 <body class="p-6 font-['Roboto_Mono']">
     <div class="max-w-5xl mx-auto">
+        <!-- Úvodní nadpis -->
+        <div class="text-center mb-6">
+            <h2 class="text-2xl font-semibold neon-glow" data-i18n="page-intro">
+                On this page, you can find game projects I collaborate on
+            </h2>
+        </div>
+
         <header class="text-center profile-card">
-            <h1 class="text-5xl font-bold neon-glow" data-lang="name">Vojtěch Kocan</h1>
-            <p class="text-lg mt-2" data-lang="subtitle">Cyber Security Student | Brno, Czech Republic</p>
-            <button id="lang-toggle" class="cyber-button" data-lang="lang-button">Přepnout do češtiny</button>
-            <a href="index.html" class="cyber-button" data-lang="home-button">Back to Portfolio</a>
+            <h1 class="text-5xl font-bold neon-glow" data-i18n="name">Vojtěch Kocan</h1>
+            <p class="text-lg mt-2" data-i18n="subtitle">Cyber Security Student | Brno, Czech Republic</p>
+            <button id="lang-toggle" class="cyber-button" data-i18n="lang-toggle">Switch to Czech</button>
+            <a href="index.html" class="cyber-button" data-i18n="home-button">Back to Portfolio</a>
         </header>
 
         <section class="mb-12">
-            <h2 class="section-header" data-lang="projects-header">My Projects</h2>
+            <h2 class="section-header" data-i18n="projects-header">My Game Projects</h2>
+
             <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="space-page-title">Space Exploration Page</h3>
-                <p class="text-gray-300" data-lang="space-page-desc">
-                    An early-stage project focused on space exploration content. Currently in development with plans to gradually integrate NASA's API for dynamic data. Visit the project at: <a href="https://krocan505202.github.io/trade-ships/" target="_blank" rel="noopener noreferrer" class="highlight-link neon-glow cyber-button">https://krocan505202.github.io/space-page/</a>
+                <h3 class="text-xl font-semibold neon-glow" data-i18n="trade-ships-title">Trade-Ships</h3>
+                <p class="text-gray-300" data-i18n="trade-ships-desc">
+                    Game about trading on Caribbean sea. For more info visit: 
+                    <a href="https://krocan505202.github.io/trade-ships/" target="_blank" rel="noopener noreferrer" class="highlight-link neon-glow cyber-button">Project Link</a>
                 </p>
             </div>
+
             <div class="timeline-item mt-6">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="checklist-title">Automation Project Checklist</h3>
-                <p class="text-gray-300" data-lang="checklist-desc">
-                    A web application for managing automation project checklists. Allows creating, editing, and tracking tasks for efficient project management. Visit the project at: <a href="https://krocan505202.github.io/checklist/" target="_blank" rel="noopener noreferrer" class="highlight-link neon-glow cyber-button">https://krocan505202.github.io/checklist/</a>
+                <h3 class="text-xl font-semibold neon-glow" data-i18n="idle-bytes-title">Idle-Bytes</h3>
+                <p class="text-gray-300" data-i18n="idle-bytes-desc">
+                    Idle game project in development. More info coming soon.
                 </p>
             </div>
           
         </section>
 
         <footer class="text-center text-gray-500 mt-12">
-            <p data-lang="footer">© 2025 Vojtěch Kocan | Portfolio v2.0</p>
+            <p data-i18n="footer">© 2025 Vojtěch Kocan | Portfolio v2.0</p>
         </footer>
     </div>
 
     <script>
         const translations = {
             cs: {
+                "page-intro": "Na této stránce můžete najít herní projekty, na kterých spolupracuji",
                 "name": "Vojtěch Kocan",
                 "subtitle": "Student kybernetické bezpečnosti | Brno, Česko",
-                "lang-button": "Switch to English",
+                "lang-toggle": "Switch to English",
                 "home-button": "Zpět na portfolio",
-                "projects-header": "Game Projects",
-                "space-page-title": "Trade-Ships",
-                "space-page-desc": "Game about trading on Carbibean see. For more info visit the project at: <a href=\"https://krocan505202.github.io/trade-ships/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/trade-ships/</a>",
-                "checklist-title": "Checklist projektu automatizace",
-                "checklist-desc": "Webová aplikace pro správu checklistů automatizačních projektů. Umožňuje vytvářet, upravovat a sledovat úkoly pro efektivní správu projektů. Navštivte projekt na: <a href=\"https://krocan505202.github.io/checklist/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/checklist/</a>",
-                "automation-title": "Projekt automatizace",
-                "automation-desc": "Soukromý projekt automatizace ve vývoji s potenciálem pro komerční model. Podrobnosti nejsou v tuto chvíli veřejně sdíleny. Máte zájem o spolupráci? Kontaktujte mě prosím e-mailem v sekci Kontaktujte mě.",
-                "audio-title": "Audio Vizualizér",
-                "audio-desc": "Webová aplikace pro vizualizaci vaší hudby pomocí koule. Navštivte projekt na: <a href=\"https://krocan505202.github.io/audio_visulazer/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/audio_visulazer/</a>",
-                "contact-header": "Kontaktujte mě",
-                "contact-title": "Kontakt",
-                "contact-info": "Pro více informací nebo dotazy ohledně spolupráce kontaktujte: <a href=\"mailto:vojtech.krocanek@gmail.com\" class=\"highlight-link neon-glow\">vojtech.krocanek@gmail.com</a>",
+                "projects-header": "Hry ve vývoji",
+                "trade-ships-title": "Trade-Ships",
+                "trade-ships-desc": "Hra o obchodování na Karibském moři. Více informací na: <a href=\"https://krocan505202.github.io/trade-ships/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link neon-glow cyber-button\">Odkaz na projekt</a>",
+                "idle-bytes-title": "Idle-Bytes",
+                "idle-bytes-desc": "Idle hra ve vývoji. Více informací brzy.",
                 "footer": "© 2025 Vojtěch Kocan | Portfolio v2.0"
             },
             en: {
+                "page-intro": "On this page, you can find game projects I collaborate on",
                 "name": "Vojtěch Kocan",
                 "subtitle": "Cyber Security Student | Brno, Czech Republic",
-                "lang-button": "Přepnout do češtiny",
+                "lang-toggle": "Přepnout do češtiny",
                 "home-button": "Back to Portfolio",
                 "projects-header": "Game Projects",
-                "space-page-title": "Trade-Ships",
-                "space-page-desc": "Game about trading on Carbibean see. For more info visit the project at: <a href=\"https://krocan505202.github.io/trade-ships/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/trade-ships/</a>",
-                "checklist-title": "Automation Project Checklist",
-                "checklist-desc": "A web application for managing automation project checklists. Allows creating, editing, and tracking tasks for efficient project management. Visit the project at: <a href=\"https://krocan505202.github.io/checklist/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/checklist/</a>",
-                "automation-title": "Automation Project",
-                "automation-desc": "A private automation project under development with potential for a commercial model. Details are not publicly disclosed at this time. Interested in collaboration? Please reach out via email in the Contact Me section.",
-                "audio-title": "Audio Visualizer",
-                "audio-desc": "A web application for visualizing your music via sphere. Visit the project at: <a href=\"https://krocan505202.github.io/audio_visulazer/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link neon-glow cyber-button\">https://krocan505202.github.io/audio_visulazer/</a>",
-                "contact-header": "Contact Me",
-                "contact-title": "Contact",
-                "contact-info": "For more information or collaboration inquiries, contact: <a href=\"mailto:vojtech.krocanek@gmail.com\" class=\"highlight-link neon-glow\">vojtech.krocanek@gmail.com</a>",
+                "trade-ships-title": "Trade-Ships",
+                "trade-ships-desc": "Game about trading on Caribbean sea. For more info visit: <a href=\"https://krocan505202.github.io/trade-ships/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"highlight-link neon-glow cyber-button\">Project Link</a>",
+                "idle-bytes-title": "Idle-Bytes",
+                "idle-bytes-desc": "Idle game project in development. More info coming soon.",
                 "footer": "© 2025 Vojtěch Kocan | Portfolio v2.0"
             }
         };
@@ -85,35 +83,25 @@
         let currentLang = 'en';
 
         function updateLanguage(lang) {
-            try {
-                document.querySelectorAll('[data-lang]').forEach(element => {
-                    const key = element.getAttribute('data-lang');
-                    if (translations[lang] && translations[lang][key]) {
-                        element.innerHTML = translations[lang][key];
-                    } else {
-                        console.warn(`Translation missing for key: ${key} in language: ${lang}`);
-                    }
-                });
-                document.documentElement.lang = lang;
-                currentLang = lang;
-                document.getElementById('lang-toggle').textContent = translations[lang]['lang-button'];
-            } catch (error) {
-                console.error('Error updating language:', error);
-            }
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                } else {
+                    console.warn(`Missing translation for key: ${key} in ${lang}`);
+                }
+            });
+            document.documentElement.lang = lang;
+            currentLang = lang;
+            document.getElementById('lang-toggle').textContent = translations[lang]['lang-toggle'];
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            const langToggleButton = document.getElementById('lang-toggle');
-            if (langToggleButton) {
-                langToggleButton.addEventListener('click', () => {
-                    const newLang = currentLang === 'cs' ? 'en' : 'cs';
-                    updateLanguage(newLang);
-                });
-            } else {
-                console.error('Language toggle button not found');
-            }
-            // Initialize with English
-            updateLanguage('en');
+            document.getElementById('lang-toggle').addEventListener('click', () => {
+                const newLang = currentLang === 'cs' ? 'en' : 'cs';
+                updateLanguage(newLang);
+            });
+            updateLanguage('en'); // initialize
         });
     </script>
 </body>
