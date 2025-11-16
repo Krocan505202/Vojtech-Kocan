@@ -5,206 +5,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Vojtěch Kocan, a 4th-year cyber security student from Brno, Czech Republic.">
     <title>Vojtěch Kocan</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body class="p-6 bg-gray-900 text-white">
-    <div class="max-w-5xl mx-auto">
-        <header class="text-center profile-card">
-            <h1 class="text-5xl font-bold neon-glow" data-lang="name">Loading...</h1>
-            <p class="text-lg mt-2" data-lang="subtitle">Loading...</p>
-            <p class="text-xl neon-glow mt-2" data-lang="status">Loading...</p>
-            <p class="text-gray-400 mt-2" data-lang="contact-info">Loading...</p>
+<body class="p-6 font-['Roboto_Mono']">
+<div class="max-w-5xl mx-auto">
+    <header class="text-center profile-card">
+        <h1 class="text-5xl font-bold neon-glow" data-lang="name">Vojtěch Kocan</h1>
+        <p class="text-lg mt-2" data-lang="subtitle">Cyber Security Student | Brno, Czech Republic</p>
+        <p class="text-xl neon-glow mt-2" data-lang="status">OPEN TO NEW OPPORTUNITIES</p>
+        <p class="text-gray-400 mt-2" data-lang="contact-info">vojtech.krocanek@gmail.com</p>
+        <select id="lang-select" class="cyber-button mt-2">
+            <option value="en">English</option>
+            <option value="cs">Čeština</option>
+            <option value="it">Italiano</option>
+            <option value="ru">Русский</option>
+        </select>
+        <a href="projects.html" class="cyber-button mt-2" data-lang="projects-button">View Projects</a>
+    </header>
 
-            <!-- Language Selector -->
-            <div class="mt-4 inline-block">
-                <select id="lang-select" class="cyber-button px-4 py-2 rounded-md text-sm bg-gray-800 text-white border border-cyan-500">
-                    <option value="en">English</option>
-                    <option value="cs">Čeština</option>
-                    <option value="it">Italiano</option>
-                    <option value="ru">Русский</option>
-                </select>
+    <section class="mb-12">
+        <h2 class="section-header" data-lang="about-header">About Me</h2>
+        <p class="text-gray-300 bg-opacity-10 bg-white p-4 rounded-lg" data-lang="about-text">
+            I am a 4th-year cyber security student at the Secondary School of Informatics in Brno. I love technology – from computer diagnostics to developing innovative projects like a remote-controlled formula car. I hold certifications in cyber security and hardware, actively tutor mathematics and physics, and am seeking opportunities to apply my technical skills and passion for the future of the digital world.
+        </p>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="section-header" data-lang="experience-header">Work Experience</h2>
+        <div class="timeline-item">
+            <h3 class="text-xl font-semibold neon-glow" data-lang="exp1-title">Technical Work in Blízkov Municipality</h3>
+            <p class="text-gray-400" data-lang="exp1-time">Blízkov Municipality, Seasonal | August 2025 – Present</p>
+            <p class="text-gray-300" data-lang="exp1-desc">Providing technical support and maintenance for local infrastructure.</p>
+        </div>
+        <div class="timeline-item">
+            <h3 class="text-xl font-semibold neon-glow" data-lang="exp2-title">Mathematics and Physics Tutor</h3>
+            <p class="text-gray-400" data-lang="exp2-time">Freelance | January 2025 – Present</p>
+            <p class="text-gray-300" data-lang="exp2-desc">Individual tutoring in mathematics and physics with a focus on effective learning.</p>
+        </div>
+        <div class="timeline-item">
+            <h3 class="text-xl font-semibold neon-glow" data-lang="exp3-title">PC Technician</h3>
+            <p class="text-gray-400" data-lang="exp3-time">Freelance | January 2022 – Present</p>
+            <p class="text-gray-300" data-lang="exp3-desc">Diagnosing and repairing computers, addressing hardware and software issues.</p>
+        </div>
+        <div class="timeline-item">
+            <h3 class="text-xl font-semibold neon-glow" data-lang="exp4-title">Intern at KOC</h3>
+            <p class="text-gray-400" data-lang="exp4-time">South Moravian Region, Internship | May 2025 – June 2025</p>
+            <p class="text-gray-300" data-lang="exp4-desc">Supporting projects in cyber security and implementing security measures.</p>
+        </div>
+        <div class="timeline-item">
+            <h3 class="text-xl font-semibold neon-glow" data-lang="exp5-title">School Editorial Team</h3>
+            <p class="text-gray-400" data-lang="exp5-time">Secondary School of Informatics, Brno | October 2022 – February 2024</p>
+            <p class="text-gray-300" data-lang="exp5-desc">Creating content for the school magazine and developing communication skills.</p>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="section-header" data-lang="education-header">Education</h2>
+        <div class="timeline-item">
+            <h3 class="text-xl font-semibold neon-glow" data-lang="edu1-title">Secondary School of Informatics, Brno</h3>
+            <p class="text-gray-400" data-lang="edu1-time">Cyber Security | September 2022 – June 2026</p>
+            <p class="text-gray-300" data-lang="edu1-desc">Specialization in cyber security and Decree No. 82/2018.</p>
+        </div>
+        <div class="timeline-item">
+            <h3 class="text-xl font-semibold neon-glow" data-lang="edu2-title">Centre of English Studies</h3>
+            <p class="text-gray-400" data-lang="edu2-time">English Language and Literature | July 2025 – August 2025</p>
+            <p class="text-gray-300" data-lang="edu2-desc">Intensive language course, B1 level.</p>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="section-header" data-lang="certifications-header">Licenses and Certifications</h2>
+        <ul class="list-disc pl-6 text-gray-300">
+            <li data-lang="cert1"><span class="neon-glow">Cyber Security Manager</span> – National Cyber and Information Security Agency (May 2025 – May 2027, ID: 059-2080)</li>
+            <li data-lang="cert2"><span class="neon-glow">Computer Hardware Basics</span> – Cisco (August 2023)</li>
+            <li data-lang="cert3"><span class="neon-glow">CES English Course Certificate B1</span> – Centre of English Studies (August 2025)</li>
+        </ul>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="section-header" data-lang="skills-header">Skills</h2>
+        <ul class="list-disc pl-6 text-gray-300">
+            <li data-lang="skill1">Cyber Security</li>
+            <li data-lang="skill2">Decree No. 82/2018</li>
+            <li data-lang="skill3">English (B1)</li>
+            <li data-lang="skill4">Italian (Elementary)</li>
+            <li data-lang="skill5">Electronics and Hardware</li>
+            <li data-lang="skill6">Computer Repairs</li>
+        </ul>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="section-header" data-lang="courses-header">Courses</h2>
+        <ul class="list-disc pl-6 text-gray-300">
+            <li data-lang="course1">Erasmus Germany – Secondary School of Informatics, Brno</li>
+            <li data-lang="course2">FSI VUT Summer School</li>
+        </ul>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="section-header" data-lang="awards-header">Awards and Achievements</h2>
+        <ul class="list-disc pl-6 text-gray-300">
+            <li data-lang="award1">Successful Participant in the Regional Round of the Astronomy Olympiad 2024 (April 2024)</li>
+            <li data-lang="award2">AT&T Hackathon Junior 2023 Winner (May 2023)</li>
+        </ul>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="section-header" data-lang="languages-header">Languages</h2>
+        <ul class="list-disc pl-6 text-gray-300">
+            <li data-lang="lang5">Czech – C2 (Native)</li>
+            <li data-lang="lang6">Slovak – C2 (Native-like)</li>
+            <li data-lang="lang1">English – B1 (Limited Working Proficiency)</li>
+            <li data-lang="lang4">Russian – A2</li>
+            <li data-lang="lang2">Italian – Elementary Proficiency</li>
+            <li data-lang="lang3">Polish – A1</li>
+            <li data-lang="lang7">German – A1</li>
+            <li data-lang="lang8">Ukrainian – A1</li>
+        </ul>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="section-header" data-lang="qa-header">Q&A</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question1">What inspired you to focus on cyber security?</h3>
+                <div class="accordion-content hidden text-gray-300" data-lang="qa-answer1">My passion for technology and problem-solving led me to cyber security...</div>
             </div>
-
-            <a href="projects.html" class="cyber-button mt-3 inline-block" data-lang="projects-button">Loading...</a>
-        </header>
-
-        <!-- About -->
-        <section class="mb-12">
-            <h2 class="section-header" data-lang="about-header">Loading...</h2>
-            <p class="text-gray-300 bg-opacity-10 bg-white p-4 rounded-lg" data-lang="about-text">Loading...</p>
-        </section>
-
-        <!-- Experience -->
-        <section class="mb-12">
-            <h2 class="section-header" data-lang="experience-header">Loading...</h2>
-            <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="exp1-title">Loading...</h3>
-                <p class="text-gray-400" data-lang="exp1-time">Loading...</p>
-                <p class="text-gray-300" data-lang="exp1-desc">Loading...</p>
+            <div class="accordion-item mt-2">
+                <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question2">How do you approach new projects?</h3>
+                <div class="accordion-content hidden text-gray-300" data-lang="qa-answer2">I start by defining clear goals and researching the problem space...</div>
             </div>
-            <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="exp2-title">Loading...</h3>
-                <p class="text-gray-400" data-lang="exp2-time">Loading...</p>
-                <p class="text-gray-300" data-lang="exp2-desc">Loading...</p>
+            <div class="accordion-item mt-2">
+                <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question3">Can I collaborate with you on a project?</h3>
+                <div class="accordion-content hidden text-gray-300" data-lang="qa-answer3">Absolutely, I’m open to collaboration!...</div>
             </div>
-            <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="exp3-title">Loading...</h3>
-                <p class="text-gray-400" data-lang="exp3-time">Loading...</p>
-                <p class="text-gray-300" data-lang="exp3-desc">Loading...</p>
-            </div>
-            <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="exp4-title">Loading...</h3>
-                <p class="text-gray-400" data-lang="exp4-time">Loading...</p>
-                <p class="text-gray-300" data-lang="exp4-desc">Loading...</p>
-            </div>
-            <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="exp5-title">Loading...</h3>
-                <p class="text-gray-400" data-lang="exp5-time">Loading...</p>
-                <p class="text-gray-300" data-lang="exp5-desc">Loading...</p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Education -->
-        <section class="mb-12">
-            <h2 class="section-header" data-lang="education-header">Loading...</h2>
-            <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="edu1-title">Loading...</h3>
-                <p class="text-gray-400" data-lang="edu1-time">Loading...</p>
-                <p class="text-gray-300" data-lang="edu1-desc">Loading...</p>
-            </div>
-            <div class="timeline-item">
-                <h3 class="text-xl font-semibold neon-glow" data-lang="edu2-title">Loading...</h3>
-                <p class="text-gray-400" data-lang="edu2-time">Loading...</p>
-                <p class="text-gray-300" data-lang="edu2-desc">Loading...</p>
-            </div>
-        </section>
+    <footer class="text-center text-gray-500 mt-12">
+        <p data-lang="footer">© 2025 Vojtěch Kocan | Cyber Portfolio v2.0</p>
+    </footer>
+</div>
 
-        <!-- Certifications -->
-        <section class="mb-12">
-            <h2 class="section-header" data-lang="certifications-header">Loading...</h2>
-            <ul class="list-disc pl-6 text-gray-300">
-                <li data-lang="cert1">Loading...</li>
-                <li data-lang="cert2">Loading...</li>
-                <li data-lang="cert3">Loading...</li>
-            </ul>
-        </section>
+<script>
+    // === VÝCHOZÍ ANGLIČTINA (přímo v JS) ===
+    const defaultTranslations = {
+        "name": "Vojtěch Kocan",
+        "subtitle": "Cyber Security Student | Brno, Czech Republic",
+        "status": "OPEN TO NEW OPPORTUNITIES",
+        "contact-info": "vojtech.krocanek@gmail.com",
+        "projects-button": "View Projects",
+        "about-header": "About Me",
+        "about-text": "I am a 4th-year cyber security student at the Secondary School of Informatics in Brno. I love technology – from computer diagnostics to developing innovative projects like a remote-controlled formula car. I hold certifications in cyber security and hardware, actively tutor mathematics and physics, and am seeking opportunities to apply my technical skills and passion for the future of the digital world.",
+        "experience-header": "Work Experience",
+        "exp1-title": "Technical Work in Blízkov Municipality",
+        "exp1-time": "Blízkov Municipality, Seasonal | August 2025 – Present",
+        "exp1-desc": "Providing technical support and maintenance for local infrastructure.",
+        "exp2-title": "Mathematics and Physics Tutor",
+        "exp2-time": "Freelance | January 2025 – Present",
+        "exp2-desc": "Individual tutoring in mathematics and physics with a focus on effective learning.",
+        "exp3-title": "PC Technician",
+        "exp3-time": "Freelance | January 2022 – Present",
+        "exp3-desc": "Diagnosing and repairing computers, addressing hardware and software issues.",
+        "exp4-title": "Intern at KOC",
+        "exp4-time": "South Moravian Region, Internship | May 2025 – June 2025",
+        "exp4-desc": "Supporting projects in cyber security and implementing security measures.",
+        "exp5-title": "School Editorial Team",
+        "exp5-time": "Secondary School of Informatics, Brno | October 2022 – February 2024",
+        "exp5-desc": "Creating content for the school magazine and developing communication skills.",
+        "education-header": "Education",
+        "edu1-title": "Secondary School of Informatics, Brno",
+        "edu1-time": "Cyber Security | September 2022 – June 2026",
+        "edu1-desc": "Specialization in cyber security and Decree No. 82/2018.",
+        "edu2-title": "Centre of English Studies",
+        "edu2-time": "English Language and Literature | July 2025 – August 2025",
+        "edu2-desc": "Intensive language course, B1 level.",
+        "certifications-header": "Licenses and Certifications",
+        "cert1": "<span class=\"neon-glow\">Cyber Security Manager</span> – National Cyber and Information Security Agency (May 2025 – May 2027, ID: 059-2080)",
+        "cert2": "<span class=\"neon-glow\">Computer Hardware Basics</span> – Cisco (August 2023)",
+        "cert3": "<span class=\"neon-glow\">CES English Course Certificate B1</span> – Centre of English Studies (August 2025)",
+        "skills-header": "Skills",
+        "skill1": "Cyber Security",
+        "skill2": "Decree No. 82/2018",
+        "skill3": "English (B1)",
+        "skill4": "Italian (Elementary)",
+        "skill5": "Electronics and Hardware",
+        "skill6": "Computer Repairs",
+        "courses-header": "Courses",
+        "course1": "Erasmus Germany – Secondary School of Informatics, Brno",
+        "course2": "FSI VUT Summer School",
+        "awards-header": "Awards and Achievements",
+        "award1": "Successful Participant in the Regional Round of the Astronomy Olympiad 2024 (April 2024)",
+        "award2": "AT&T Hackathon Junior 2023 Winner (May 2023)",
+        "languages-header": "Languages",
+        "lang1": "English – B1 (Limited Working Proficiency)",
+        "lang2": "Italian – Elementary Proficiency",
+        "lang3": "Polish – A1",
+        "lang4": "Russian – A2",
+        "lang5": "Czech – C2 (Native)",
+        "lang6": "Slovak – C2 (Native-like)",
+        "lang7": "German – A1",
+        "lang8": "Ukrainian – A1",
+        "qa-header": "Q&A",
+        "qa-question1": "What inspired you to focus on cyber security?",
+        "qa-answer1": "My passion for technology and problem-solving led me to cyber security. I was fascinated by how vulnerabilities in systems could be exploited and wanted to learn how to protect digital infrastructures. Participating in hackathons and working on real-world projects further fueled my interest in securing the future of technology.",
+        "qa-question2": "How do you approach new projects?",
+        "qa-answer2": "I start by defining clear goals and researching the problem space. Then, I break the project into manageable tasks, prioritize security and efficiency, and iterate based on testing and feedback. Collaboration and staying updated with the latest tech trends are key to my approach.",
+        "qa-question3": "Can I collaborate with you on a project?",
+        "qa-answer3": "Absolutely, I’m open to collaboration! Feel free to reach out via email or LinkedIn to discuss potential projects. I’m particularly interested in cyber security, hardware, or innovative tech ideas that align with my skills and passions.",
+        "footer": "© 2025 Vojtěch Kocan | Cyber Portfolio v2.0"
+    };
 
-        <!-- Skills -->
-        <section class="mb-12">
-            <h2 class="section-header" data-lang="skills-header">Loading...</h2>
-            <ul class="list-disc pl-6 text-gray-300">
-                <li data-lang="skill1">Loading...</li>
-                <li data-lang="skill2">Loading...</li>
-                <li data-lang="skill3">Loading...</li>
-                <li data-lang="skill4">Loading...</li>
-                <li data-lang="skill5">Loading...</li>
-                <li data-lang="skill6">Loading...</li>
-            </ul>
-        </section>
+    let translations = { ...defaultTranslations }; // kopie
 
-        <!-- Courses -->
-        <section class="mb-12">
-            <h2 class="section-header" data-lang="courses-header">Loading...</h2>
-            <ul class="list-disc pl-6 text-gray-300">
-                <li data-lang="course1">Loading...</li>
-                <li data-lang="course2">Loading...</li>
-            </ul>
-        </section>
-
-        <!-- Awards -->
-        <section class="mb-12">
-            <h2 class="section-header" data-lang="awards-header">Loading...</h2>
-            <ul class="list-disc pl-6 text-gray-300">
-                <li data-lang="award1">Loading...</li>
-                <li data-lang="award2">Loading...</li>
-            </ul>
-        </section>
-
-        <!-- Languages -->
-        <section class="mb-12">
-            <h2 class="section-header" data-lang="languages-header">Loading...</h2>
-            <ul class="list-disc pl-6 text-gray-300">
-                <li data-lang="lang1">Loading...</li>
-                <li data-lang="lang2">Loading...</li>
-            </ul>
-        </section>
-
-        <!-- Q&A -->
-        <section class="mb-12">
-            <h2 class="section-header" data-lang="qa-header">Loading...</h2>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question1">Loading...</h3>
-                    <div class="accordion-content hidden text-gray-300" data-lang="qa-answer1">Loading...</div>
-                </div>
-                <div class="accordion-item mt-2">
-                    <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question2">Loading...</h3>
-                    <div class="accordion-content hidden text-gray-300" data-lang="qa-answer2">Loading...</div>
-                </div>
-                <div class="accordion-item mt-2">
-                    <h3 class="text-xl font-semibold neon-glow cursor-pointer py-2" data-lang="qa-question3">Loading...</h3>
-                    <div class="accordion-content hidden text-gray-300" data-lang="qa-answer3">Loading...</div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="text-center text-gray-500 mt-12">
-            <p data-lang="footer">© 2025 Vojtěch Kocan | Portfolio</p>
-        </footer>
-    </div>
-
-    <script>
-        let translations = {};
-        let currentLang = localStorage.getItem('lang') || 'en';
-
-        async function loadLanguage(lang) {
+    // Načítání jazyka
+    async function loadLanguage(lang) {
+        if (lang === 'en') {
+            translations = { ...defaultTranslations };
+        } else {
             try {
                 const response = await fetch(`translations/${lang}.json`);
-                if (!response.ok) throw new Error("Language file not found");
+                if (!response.ok) throw new Error('Not found');
                 translations = await response.json();
-                applyTranslations();
-                document.documentElement.lang = lang;
-                localStorage.setItem('lang', lang);
-                document.getElementById('lang-select').value = lang;
             } catch (err) {
-                console.error("Failed to load language:", err);
-                if (lang !== 'en') loadLanguage('en');
+                console.error('Failed to load:', lang, err);
+                return;
             }
         }
+        updateLanguage();
+        document.documentElement.lang = lang;
+    }
 
-        function applyTranslations() {
-            document.querySelectorAll('[data-lang]').forEach(el => {
-                const key = el.getAttribute('data-lang');
-                if (translations[key]) {
-                    el.innerHTML = translations[key];
-                }
-            });
-        }
-
-        document.getElementById('lang-select').addEventListener('change', (e) => {
-            loadLanguage(e.target.value);
+    // Aktualizace textu
+    function updateLanguage() {
+        document.querySelectorAll('[data-lang]').forEach(el => {
+            const key = el.getAttribute('data-lang');
+            if (translations[key]) {
+                el.innerHTML = translations[key];
+            }
         });
+    }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const accordionItems = document.querySelectorAll('.accordion-item');
-            accordionItems.forEach(item => {
-                const header = item.querySelector('h3');
-                const content = item.querySelector('.accordion-content');
-                header.addEventListener('click', () => {
-                    accordionItems.forEach(other => {
-                        const otherContent = other.querySelector('.accordion-content');
-                        if (otherContent !== content && !otherContent.classList.contains('hidden')) {
-                            otherContent.classList.add('hidden');
-                        }
-                    });
-                    content.classList.toggle('hidden');
+    // Přepínač
+    document.getElementById('lang-select').addEventListener('change', (e) => {
+        loadLanguage(e.target.value);
+    });
+
+    // Accordion
+    document.addEventListener('DOMContentLoaded', () => {
+        updateLanguage(); // okamžitě
+        document.querySelectorAll('.accordion-item').forEach(item => {
+            const header = item.querySelector('h3');
+            const content = item.querySelector('.accordion-content');
+            header.addEventListener('click', () => {
+                document.querySelectorAll('.accordion-content').forEach(c => {
+                    if (c !== content) c.classList.add('hidden');
                 });
+                content.classList.toggle('hidden');
             });
-            loadLanguage(currentLang);
         });
-    </script>
+    });
+</script>
 </body>
 </html>
